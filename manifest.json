@@ -1,6 +1,6 @@
 {
   "name": "What's my Age Again?",
-  "short_name": "AgeCalc",
+  "short_name": "WMAA",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
