@@ -4,6 +4,11 @@ const saveDateButton = document.getElementById('saveDate');
 const ageLabel = document.getElementById('ageLabel');
 const resetButton = document.getElementById('resetButton');
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./service-worker.js')
+    .then(() => console.log('Service Worker registered successfully'))
+    .catch((error) => console.error('Service Worker registration failed:', error));
+}
 
 // Save birth date to localStorage
 saveDateButton.addEventListener('click', () => {
