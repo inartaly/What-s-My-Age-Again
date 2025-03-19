@@ -2,6 +2,8 @@
 const birthdateInput = document.getElementById('birthdate');
 const saveDateButton = document.getElementById('saveDate');
 const ageLabel = document.getElementById('ageLabel');
+const resetButton = document.getElementById('resetButton');
+
 
 // Save birth date to localStorage
 saveDateButton.addEventListener('click', () => {
@@ -13,6 +15,13 @@ saveDateButton.addEventListener('click', () => {
   } else {
     alert('Please enter a valid birth date.');
   }
+});
+
+resetButton.addEventListener('click', () => {
+  localStorage.removeItem('birthdate'); // Clear saved birthdate
+  birthdateInput.style.display = 'block'; // Show the date input field
+  saveDateButton.style.display = 'block'; // Show the save button
+  ageLabel.textContent = 'Your age will appear here'; // Reset age label
 });
 
 function hideInputFields() {
