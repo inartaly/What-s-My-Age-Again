@@ -30,8 +30,10 @@ resetButton.addEventListener('click', () => {
 });
 
 function hideInputFields() {
+  const birthdateLabel = document.querySelector('label[for="birthdate"]');
   birthdateInput.style.display = 'none';
   saveDateButton.style.display = 'none';
+  birthdateLabel.style.display = 'none'; // Hide the label
 }
 
 // Calculate and display age
