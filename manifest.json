@@ -1,7 +1,7 @@
 {
   "name": "What's my Age Again?",
   "short_name": "AgeCalc",
-  "start_url": ".",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0078d4",
