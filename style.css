@@ -9,8 +9,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  text-align: center;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevent scrolling */
 }
 
 /* Heading */
