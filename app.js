@@ -9,10 +9,16 @@ saveDateButton.addEventListener('click', () => {
   if (birthdate) {
     localStorage.setItem('birthdate', birthdate);
     calculateAndDisplayAge(birthdate);
+    hideInputFields();  // Hide input and button after saving
   } else {
     alert('Please enter a valid birth date.');
   }
 });
+
+function hideInputFields() {
+  birthdateInput.style.display = 'none';
+  saveDateButton.style.display = 'none';
+}
 
 // Calculate and display age
 function calculateAndDisplayAge(birthdate) {
@@ -33,5 +39,6 @@ window.onload = () => {
   const savedBirthdate = localStorage.getItem('birthdate');
   if (savedBirthdate) {
     calculateAndDisplayAge(savedBirthdate);
+    hideInputFields(); // Hide input fields if birthdate exists
   }
 };
