@@ -25,7 +25,7 @@ function calculateAndDisplayAge(birthdate) {
   if (!isBirthdayPassed) {
     age -= 1;
   }
-  ageLabel.textContent = `Your age: ${age} years`;
+  ageLabel.textContent = `You are ${age} years old...`;
 }
 
 // On page load, check if birthdate exists
