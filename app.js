@@ -26,6 +26,7 @@ resetButton.addEventListener('click', () => {
   localStorage.removeItem('birthdate'); // Clear saved birthdate
   birthdateInput.style.display = 'block'; // Show the date input field
   saveDateButton.style.display = 'block'; // Show the save button
+  birthdateLabel.style.display = 'block'; // Hide the label
   ageLabel.textContent = 'Your age will appear here'; // Reset age label
 });
 
