@@ -4,7 +4,9 @@ const filesToCache = [
   './index.html',
   './style.css',
   './app.js',
-  './manifest.json'
+  './manifest.json',
+  './materialize.css',
+  './materialize.js'
 ];
 
 self.addEventListener('install', (event) => {
